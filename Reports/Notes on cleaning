@@ -1,0 +1,46 @@
+Imported pandas library and loaded the dataset.
+The dataset contains 49191 and 172 rows and columns respectively.
+
+I chosen only essential rows and created a new dataset called df_clean and changed their dtypes to category.
+Verified for any null values and find out that 50% of salary was null.
+
+-- To Analyze Tech stack for High package
+
+ Without the language_have_worked and salary column I can't do accurate analysis. So I dropped null values either in salary or language_have_worked columns and created a new dataset df_final! (Only 22121 rows)
+ In df_final dataset the maximum salary be 33,552,715 and the minimum be 1$. This result may contain hobbyist and CEO's salary. I can't take those in my analysis.
+ So I used a range for salary column and created a dataset df_refined to take for analysis. (the quantile between 0.05 and 0.95)
+ Now the salary lies between 3,495 and 232,029 $.
+
+!Task - On Language_have_worked column contains list of languages.
+!Solution - I need to split and form kind of tech stack to analyse so I created a new df tech_df focused on Tech stack.
+
+ ---Analysis:
+     I've chosen ResponseId, language_have_worked and salary columns to this new tech_df.
+     Created a new column Language by splitting the languages which separated by ',' in language_have_worked column.
+     Exploded the lists into individual rows.
+     Looked for Top 10 languages with popularity and the result be:
+         1. JS 2. HTML/CSS 3. SQL 4. Python 5. Shell/Bash 6. TypeScript 7. C# 8. Java 9. PowerShell 10.C++
+     Looked for Top 10 High paying Language and the result sounds like 'What???':
+         1. Elixir 2.Ruby 3.Perl 4.Swift 5. Groovy 6. Go 7. Bash/Shell 8. PowerShell 9. Rust 10.TypeScript
+
+   --To look for High Paying stack:
+     Defined a function categorize_tech() and categorized tech stack with respect to their languages.
+     Created a new column Path to categorize tech stack.
+     Looked for Top Tech stack by High salary and result be:
+       1. Cloud and Devops 2. Other 3. Data & AI 4. Enterprises & Systems 5. Web Development
+     But This result doesn't suit for a fresher roadmap. Now I Analysed the results for Salary roadmap by experience and the result be:
+       ~For Junior level Web Development has low median salary that mean the fresher for IT chooses the Web Dev stack.
+       ~But once the fresher got experience he can move to other stacks that's why the cloud/devops had junior level median salary for $29k.
+      **Fact - Entry Level in Cloud/DevOps isn't actually for beginners. Companies usually hire people into DevOps who already have some IT background. **
+     Checked for using AI in work helps one to get premium pay and the result was sexpected:
+        Yes, Of course! Developers using AI agents earn 16.3% more than those who don't.
+
+Lowercased all column names in all dataset to store these dataset to PgAdmin and to query.
+Connected my dataset to my database using sqlalchemy.
+
+Insights on these analysis:
+
+ ~ Popularity != High pay jobs. Popular languages only helps to get into IT but it doesn't helps for high paying roles.
+ ~ High paying stack is not for freshers at most case but it for who  have experience in IT fields.
+ ~ Once Entering IT with low median salary was common and after only one can switch his stack to get high pay.
+ ~ Using AI, really contributes to high pay!
