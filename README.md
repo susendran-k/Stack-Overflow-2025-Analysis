@@ -23,13 +23,13 @@ A high-level diagnostic view of the 2025 landscape. Featuring the **16.3% AI Div
 ### 2. Interactive Salary Engine (Ultra-Wide)
 A desktop-optimized predictor allowing users to toggle between **Web Dev**, **Data & AI**, and **Cloud/DevOps**. It uses dynamic growth curves to estimate market value based on years of experience.
 <p align="center">
-  <img src="./assets/predictor.png" width="900" alt="Salary Predictor Tool" style="border-radius: 15px; border: 1px solid #eee;">
+  <img src="./assets/salary%20predictor.png" width="900" alt="Salary Predictor Tool" style="border-radius: 15px; border: 1px solid #eee;">
 </p>
 
 ### 3. Education Impact Analysis
 A specialized deep dive into the ROI of academic degrees. This visualization identifies the **"Experience Bridge"**—the point where technical mastery begins to outweigh formal degree levels in total compensation.
 <p align="center">
-  <img src="./assets/education.png" width="900" alt="Education Impact Analysis" style="border-radius: 15px; border: 1px solid #eee;">
+  <img src="./assets/education%20impact.png" width="900" alt="Education Impact Analysis" style="border-radius: 15px; border: 1px solid #eee;">
 </p>
 
 ---
