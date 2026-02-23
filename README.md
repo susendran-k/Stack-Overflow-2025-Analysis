@@ -1,6 +1,3 @@
-# Stack-Overflow-2025-Analysis
-Analysing 2025 Stack Overflow survey data using Python &amp; SQL to identify high-growth career paths and the AI salary premium.
-
 # 📊 Stack Overflow 2025: Salary Intelligence Engine
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
